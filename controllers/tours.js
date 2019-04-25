@@ -4,6 +4,7 @@ const tourController = {
     index: (req,res) => {
         tour.find().then(tours => {
             res.render('concert/index', {tours});
+            
         })
     },
     create:(req,res) => {
@@ -12,6 +13,7 @@ const tourController = {
     new: (req,res) => {
         res.render('concert/createTour');
     },
+
     update:{},
     delete:{}
 }
