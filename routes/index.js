@@ -10,5 +10,9 @@ router.get('/new',tourController.new);
 
 router.post('/',tourController.create);
 
+router.get('/:id/edit', tourController.edit);
 
+router.put('/:id', tourController.update);
+
+router.put('/:id', tourController.update);
 module.exports = router;
