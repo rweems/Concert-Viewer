@@ -7,7 +7,10 @@ const tourController = {
         })
     },
     create:(req,res) => {
-        tour.create(newTour).then()
+        tour.create(req.body).then(()=> res.redirect('/'))
+    },
+    new: (req,res) => {
+        res.render('concert/createTour');
     },
     update:{},
     delete:{}
