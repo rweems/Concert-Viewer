@@ -16,7 +16,7 @@ app.use(express.static(__dirname + '/public'));
 app.use('/', routes);
 
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
     console.log(`listening to port ${PORT}`);
 });
