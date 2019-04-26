@@ -17,4 +17,6 @@ router.put('/:id', tourController.update);
 router.get('/:id',tourController.show);
 
 router.put('/:id', tourController.update);
+
+router.delete('/:id/delete',tourController.delete);
 module.exports = router;
