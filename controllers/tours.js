@@ -21,10 +21,19 @@ const tourController = {
     update:(req,res) => {
         //find by id, update the body, return modified document
         tour.findByIdAndUpdate(req.params.id, req.body, {new:true}).then(() => {
-            res.redirect(`${req.params.id}`)
+            res.redirect(`/${req.params.id}`)
         })
     },
-    delete:{}
+    show:(req,res) => {
+        tour.findById(req.params.id).then(tour => {
+            res.render('concert/show',{tour})
+        })
+    },
+    delete:(req,res) => {
+        tour.findByIdAndDelete(req.params.id).then(()=> {
+            res.redirect('/');
+        });
+    }
 }
 
 module.exports = tourController;
