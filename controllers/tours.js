@@ -11,7 +11,7 @@ const tourController = {
         tour.create(req.body).then(()=> res.redirect('/'))
     },
     new: (req,res) => {
-        res.render('concert/createTour');
+        res.render('concert/create');
     },
     edit: (req,res) => {
         tour.findById(req.params.id).then(tour => {
@@ -30,7 +30,7 @@ const tourController = {
         })
     },
     delete:(req,res) => {
-        tour.findByIdAndDelete(req.params.id).then(()=> {
+        tour.findByIdAndDelete(req.params.id).then(()=>{
             res.redirect('/');
         });
     }
