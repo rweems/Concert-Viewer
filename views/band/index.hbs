@@ -1,0 +1,17 @@
+
+<h1>{{tour.name}}/h1>
+{{#each bands}}
+    <ul>
+        <li>
+            <a href ="/{{bands._id}}">
+                {{bands.name}} 
+            </a>
+        </li>
+    </ul>
+    <a href="/{{_id}}/edit">Edit</a>
+    <a href="/">Delete</a>
+{{/each}}
+
+</br>
+</br>
+<a href ="/{{tour._id}}/create">Add Band</a>
