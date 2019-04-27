@@ -30,7 +30,7 @@ const tourController = {
         })
     },
     delete:(req,res) => {
-        tour.findByIdAndDelete(req.params.id).then(()=>{
+        tour.findByIdAndRemove({'_id': req.params.id}).then(() => {
             res.redirect('/');
         });
     }
