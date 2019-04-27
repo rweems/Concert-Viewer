@@ -1,5 +1,5 @@
 
-#Concert Viewer
+# Concert Viewer
 
 
 
@@ -15,7 +15,7 @@ App: [Concert-Viewer](https://warm-brushlands-18577.herokuapp.com/)
 ![wireframe](IMG-0504.png)
 
 
-###Technology Used
+### Technology Used
 
 
 Html
