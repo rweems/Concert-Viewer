@@ -1,4 +1,18 @@
 <h1>{{tour.name}}</h1>
+{{#each tours}}
+    <ul>
+        <li>
+            <a href ="/{{_id}}">
+                {{name}} 
+            </a>
+        </li>
+    </ul>
+    <a href="/{{_id}}/edit">Edit</a>
+    <a href="/">Delete</a>
+{{/each}}
 
+</br>
+</br>
+<a href ="/{{tour._id}}/new">Add Band</a>
 
 <a href ="/">Home</a>
