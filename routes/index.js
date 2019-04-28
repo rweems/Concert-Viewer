@@ -30,5 +30,6 @@ router.get('/:id/new',bandController.new);
 
 router.post('/:id',bandController.create);
 
+router.get('/{tourId}/:id/show', bandController.show);
 
 module.exports = router;

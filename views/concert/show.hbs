@@ -5,9 +5,11 @@
             <h1 class="title has-text-centered">{{tour.name}}</h1>
         </div>
     </header>
-    <main>
+    
+    <main class="section has-background-grey-light">
         <div>
             <div>
+                
                 {{#each bands}}
                     <ul>
                         <li>
@@ -16,8 +18,9 @@
                             </a>
                         </li>
                     </ul>
+                    </br>
+                    </br>
                 {{/each}}
-
                 </br>
                 </br>
                 <a href ="/{{tour._id}}/new">Add Band</a>

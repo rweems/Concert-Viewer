@@ -1,8 +1,16 @@
-<h2>Edit {{tour.name}} Tour</h2>
+<div class="container">
+    <header class="hero is-dark">
+        <div class="hero-body">
+            <h2 class="title has-text-centered">Edit {{tour.name}} Tour</h2>
+        </div>
+    </header>
+    </br>
+    <main class="section has-background-grey-light">
+        <form action="/{{tour._id}}?_method=PUT" method="POST">
+            <input name="name" type="text" placeholder="Tour Name">
+            <input type="submit" value="Submit">
+        </form>
 
-<form action="/{{tour._id}}?_method=PUT" method="POST">
-    <input name="name" type="text" placeholder="Tour Name">
-    <input type="submit" value="Submit">
-</form>
-
-<a href="/">Home</a>
+        <a href="/">Home</a>
+    </main>
+</div>
