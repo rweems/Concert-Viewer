@@ -5,7 +5,7 @@
 
 
 
-App: [Concert-Viewer](https://warm-brushlands-18577.herokuapp.com/)
+App: [Concert-Viewer](https://concert-viewer.herokuapp.com/)
 
 [Trello](https://trello.com/b/U7GwgOkF/concert-viewer)
 
