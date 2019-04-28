@@ -18,7 +18,7 @@ App: [Concert-Viewer](https://warm-brushlands-18577.herokuapp.com/)
 ### Technology Used
 
 
-Html
+Bulma
 
 
 CSS
@@ -27,14 +27,20 @@ CSS
 Express
 
 
-Mongoose
+Handlebars
+
+
+Heroku
+
+
+Html
 
 
 Mongo
 
 
-Handlebars
+Mongoose
 
 
-Heroku
+
 
