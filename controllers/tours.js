@@ -4,14 +4,17 @@ const tourController = {
     index: (req,res) => {
         tour.find().then(tours => {
             res.render('concert/index', {tours});
-            
+           
         })
     },
     create:(req,res) => {
-        tour.create(req.body).then(()=> res.redirect('/'))
+        tour.create(req.body)
+        
+        .then(()=> res.redirect('/'))
     },
     new: (req,res) => {
         res.render('concert/create');
+        
     },
     edit: (req,res) => {
         tour.findById(req.params.id).then(tour => {
