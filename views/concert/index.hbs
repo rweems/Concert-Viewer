@@ -1,19 +1,26 @@
 
+<div class="container">
+    <header class="hero is-dark ">
+        <div class="hero-body">
+            <h1 class="title has-text-centered">Welcome to The Concert Viewer</h1>
+        </div>
+    </header>
+    <main>
+        {{#each tours}}
+            <ul>
+                <li>
+                    <a href ="/{{_id}}">
+                        {{name}} 
+                    </a>
+                </li>
+            </ul>
+            <a href="/{{_id}}/edit">Edit</a>
+            <a href="/{{_id}}/delete">Delete</a>
+            
+        {{/each}}
 
-<h1>Welcome to The Concert Viewer</h1>
-{{#each tours}}
-    <ul>
-        <li>
-            <a href ="/{{_id}}">
-                {{name}} 
-            </a>
-        </li>
-    </ul>
-    <a href="/{{_id}}/edit">Edit</a>
-    <a href="/{{_id}}/delete">Delete</a>
-    
-{{/each}}
-
-</br>
-</br>
-<a href ="/new">Add Tour</a>
+        </br>
+        </br>
+        <a href ="/new">Add Tour</a>
+    </main>
+</div>

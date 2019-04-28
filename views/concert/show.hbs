@@ -1,20 +1,29 @@
-<h1>{{tour.name}}</h1>
-{{#each bands}}
-    <ul>
-        <li>
-            <a href ="/{{_id}}">
-                {{name}} 
-            </a>
-        </li>
-    </ul>
-    <a href="/{{_id}}/edit">Edit</a>
-    <form action="/{{tour.id}}?_method=DELETE" method="POST">
-        <input type="submit" value="Delete"></submit>
-    </form>
-{{/each}}
 
-</br>
-</br>
-<a href ="/{{tour._id}}/new">Add Band</a>
+<div class="container">
+    <header class="hero is-dark ">
+        <div class="hero-body">
+            <h1 class="title has-text-centered">{{tour.name}}</h1>
+        </div>
+    </header>
+    <main>
+        <div>
+            <div>
+                {{#each bands}}
+                    <ul>
+                        <li>
+                            <a href ="/{{_id}}">
+                                {{name}} 
+                            </a>
+                        </li>
+                    </ul>
+                {{/each}}
 
-<a href ="/">Home</a>
+                </br>
+                </br>
+                <a href ="/{{tour._id}}/new">Add Band</a>
+
+                <a href ="/">Home</a>
+            </div>
+        </div>
+    </main>
+</div>
