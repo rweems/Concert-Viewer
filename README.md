@@ -30,16 +30,16 @@ App: [Concert-Viewer](https://concert-viewer.herokuapp.com/)
 * Handlebars
 
 
-- Heroku
+* Heroku
 
 
-- Html
+* Html
 
 
-Mongo
+* Mongo
 
 
-Mongoose
+* Mongoose
 
 
 
