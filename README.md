@@ -18,22 +18,22 @@ App: [Concert-Viewer](https://concert-viewer.herokuapp.com/)
 ### Technology Used
 
 
-Bulma
+* Bulma
 
 
-CSS
+* CSS
 
 
-Express
+* Express
 
 
-Handlebars
+* Handlebars
 
 
-Heroku
+- Heroku
 
 
-Html
+- Html
 
 
 Mongo
