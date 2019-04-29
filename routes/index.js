@@ -26,10 +26,10 @@ router.get('/:id/delete',tourController.delete);
 const bandController = require('../controllers/bands.js');
 router.get('/:id',bandController.index);
 
-router.get('/:id/new',bandController.new);
+router.get('/:bandId/new',bandController.new);
 
 router.post('/:id',bandController.create);
 
-router.get('/{tourId}/:id/show', bandController.show);
+router.get('/:id/band/:bandId', bandController.show);
 
 module.exports = router;
