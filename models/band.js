@@ -9,7 +9,7 @@ const Band = new mongoose.Schema({
     location: String,
     image: String,
     genre: String,
-    tourId: {type: ObjectId, ref: 'TourCollection'}
+    tourId: {type: ObjectId, ref: 'tour'}
 });
 
 let BandCollection = mongoose.model('Band',Band);
