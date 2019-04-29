@@ -13,7 +13,7 @@
                 {{#each bands}}
                     <ul>
                         <li>
-                            <a href ="/{{_id}}">
+                            <a href ="/{{tourId._id}}/{{_id}}">
                                 {{name}} 
                             </a>
                         </li>
@@ -23,9 +23,9 @@
                 {{/each}}
                 </br>
                 </br>
-                <a href ="/{{tour._id}}/new">Add Band</a>
+                <a class="button is-dark" href ="/{{tour._id}}/new">Add Band</a>
 
-                <a href ="/">Home</a>
+                <a class="button is-dark" href ="/">Home</a>
             </div>
         </div>
     </main>
