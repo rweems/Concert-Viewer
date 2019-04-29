@@ -9,7 +9,6 @@ const tourController = {
     },
     create:(req,res) => {
         tour.create(req.body)
-        
         .then(()=> res.redirect('/'))
     },
     new: (req,res) => {
@@ -30,6 +29,7 @@ const tourController = {
     show:(req,res) => {
         tour.findById(req.params.id).then(tour => {
             res.render('concert/show',{tour})
+            
         })
     },
     delete:(req,res) => {
