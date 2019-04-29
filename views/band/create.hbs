@@ -1,10 +1,18 @@
 
-
-<h1> Add a new Band</h1>
-</br>
-<form action="/{{tour._id}}" method="POST">
-    <input type="text" name="name" placeholder="Band name">
-    <input type="submit" value="Submit">
-</form>
-
-<a href ="/">Home</a> <a href="/{{tour._id}}">Back</a>
+<div class="container">
+    <header class="hero is-dark">
+        <div class="hero-body">
+            <h1 class="title has-text-centered"> Add a new Band</h1>
+        </div>
+    </header>
+    
+    <main class="section has-background-grey-light">
+        <form action="/{{band._id}}" method="POST">
+            <input type="text" name="name" placeholder="Band name">
+            <input type="submit" value="Submit">
+        </form>
+        </br>
+        </br>
+        <a href ="/">Home</a>
+    </main>
+</div>
