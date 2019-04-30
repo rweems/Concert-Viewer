@@ -36,5 +36,19 @@ router.put('/band/:id/update', bandController.update);
 
 router.get('/band/:id/delete',bandController.delete);
 
+const memberController = require('../controllers/members.js');
+router.get('/member/:id',memberController.index);
+
+router.get('/member/:id/new',memberController.new);
+
+router.post('/member/:id', memberController.create);
+
+router.get('/member/:id/edit', memberController.edit);
+
+router.get('/member/:id/show', memberController.show);
+
+router.put('/member/:id/update', memberController.update);
+
+router.get('/member/:id/delete',memberController.delete);
 
 module.exports = router;
