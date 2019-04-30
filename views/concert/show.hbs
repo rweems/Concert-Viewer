@@ -6,24 +6,44 @@
         </div>
     </header>
     
-    <main class="section has-background-grey-light">
+    <main class="section has-background-grey-light has-text-black has-text-weight-bold">
         <div>
             <div>
                 
                 {{#each bands}}
                     <ul>
                         <li>
-                            <a href ="/{{tourId._id}}/{{_id}}">
+                            <a href ="/band/{{_id}}/show">
                                 {{name}} 
                             </a>
                         </li>
                     </ul>
                     </br>
                     </br>
+                    <a class="button is-dark is-small" href="/band/{{_id}}/edit">Edit</a>
+                    <a class="button is-dark is-small" href="/band/{{_id}}/delete">Delete</a>
                 {{/each}}
                 </br>
                 </br>
-                <a class="button is-dark" href ="/{{tour._id}}/new">Add Band</a>
+                <form action="" method="POST">
+                    <label for="name">Band Name</label>
+                    <input type="text" name="name" placeholder="Band name">
+                    </br>
+                    <label for="name">Origin</label>
+                    <input type="text" name="location" placeholder="Origin">
+                    </br>
+                    <label for="name">Image</label>
+                    <input type="text" name="image" placeholder="Img">
+                    </br>
+                    <label for="name">Genre</label>
+                    <input type="text" name="genre" placeholder="Genre">
+                    </br>
+                    </br>
+                    <input class="button is-dark is-small" type="submit" value="Submit">
+                </form>
+                </br>
+                </br>
+
 
                 <a class="button is-dark" href ="/">Home</a>
             </div>

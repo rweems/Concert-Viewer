@@ -1,17 +1,52 @@
 
-<h1>{{tour.name}}/h1>
-{{#each bands}}
-    <ul>
-        <li>
-            <a href ="/{{tour._id}}/{{_id}}">
-                {{bands.name}} 
-            </a>
-        </li>
-    </ul>
-    <a href="/{{_id}}/edit">Edit</a>
-    <a href="/">Delete</a>
-{{/each}}
+<div class="container ">
+    <header class="hero is-dark ">
+        <div class="hero-body">
+            <h1 class="title has-text-centered">{{name}}</h1>
+        </div>
+    </header>
+    
+    <main class="section has-background-grey-light is-fullheight has-text-black has-text-weight-bold">
+        <div class="hero-body">
+        </br>
+        
+        {{#each bands}}
+            <ul>
+                <li>
+                    <a href ="/{{tour._id}}/band/{{_id}}">
+                        {{band.name}} 
+                    </a>
+                </li>
+            </ul>
+            <a class="button is-dark is-small" href="/{{_id}}/edit">Edit</a>
+            <a class="button is-dark is-small" href="/{{_id}}/delete">Delete</a>
+            </br>
+            </br>
+        {{/each}}
 
-</br>
-</br>
-<a href ="/{{tour._id}}/create">Add Band</a>
+        </br>
+        </br>
+        <form action="/{{_id}}" method="POST">
+            <label for="name">Band Name</label>
+            <input type="text" name="name" placeholder="Band name">
+            </br>
+            <label for="name">Origin</label>
+            <input type="text" name="location" placeholder="Origin">
+            </br>
+            <label for="name">Image</label>
+            <input type="text" name="image" placeholder="Img">
+            </br>
+            <label for="name">Genre</label>
+            <input type="text" name="genre" placeholder="Genre">
+            </br>
+            </br>
+            <input class="button is-dark is-small" type="submit" value="Submit">
+        </form>
+        </br>
+        </br>
+
+
+        <a class="button is-dark" href ="/">Home</a>
+        </div>
+    </main>
+</div>

@@ -23,7 +23,7 @@ const tourController = {
     update:(req,res) => {
         //find by id, update the body, return modified document
         tour.findByIdAndUpdate(req.params.id, req.body, {new:true}).then(() => {
-            res.redirect(`/${req.params.id}`)
+            res.redirect(`/${req.params.id}/show`)
         })
     },
     show:(req,res) => {

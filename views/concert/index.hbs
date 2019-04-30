@@ -6,7 +6,7 @@
         </div>
     </header>
     
-    <main class="section has-background-grey-light is-fullheight">
+    <main class="section has-background-grey-light is-fullheight has-text-black has-text-weight-bold">
         <div class="hero-body">
         </br>
         
@@ -14,7 +14,7 @@
             <ul>
                 <li class="list-item">
                    <i class="fas fa-skull-crossbones"></i>
-                    <a href ="/{{_id}}">
+                    <a href ="/{{_id}}/show">
                         {{name}} 
                     </a>
                 </li>
@@ -27,7 +27,12 @@
 
         </br>
         </br>
-        <a class="button is-dark" href ="/new">Add Tour</a>
+
+        <form action="/" method="POST">
+            <label for="name">Tour Name</label>
+            <input type="text" name="name" placeholder="Tour name">
+            <input class="button is-dark is-small" type="submit" value="Submit">
+        </form>
         </div>
     </main>
 </div>

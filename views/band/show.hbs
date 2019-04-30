@@ -1,0 +1,31 @@
+<div class="container">
+    <header class="hero is-dark">
+        <div class="hero-body">
+            <h1 class="title has-text-centered">{{band.name}}</h1>
+        </div>
+    </header>
+
+     <main class="section has-background-grey-light has-text-black has-text-weight-bold">
+        <div>
+                {{#each members}}
+                <ul>
+                    <li>
+                        {{name}} 
+                    </li>
+                </ul>
+                <a href="/{{_id}}/edit">Edit</a>
+    
+                {{/each}}
+
+            </br>
+            </br>
+        <form action="?" method="POST">
+            <label for="name">Member Name</label>
+            <input type="text" name="name" placeholder="Member name">
+            <input class="button is-dark is-small" type="submit" value="Submit">
+        </form>
+
+        <a href ="/">Home</a>
+    </div>
+    </main>
+</div>

@@ -3,19 +3,18 @@ const tour = require('./tours.js')
 const bandController = {
     index: (req,res) => {
         band.find().then(bands => {
-            res.render('concert/show', {bands});
+            res.render('band/index', {bands});
         })
     },
     create:(req,res) => {
         band.create(req.body)
-            .then(()=> res.redirect(`/${tour._id}`))
+            .then(()=> res.redirect('band/index'))
     },
     new: (req,res) => {
-        
         res.render('band/create');
     },
     edit: (req,res) => {
-        tour.findById(req.params.id).then(band => {
+        band.findById(req.params.id).then(band => {
             res.render('band/edit', {band});
         })
     },

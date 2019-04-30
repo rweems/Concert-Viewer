@@ -1,13 +1,16 @@
 <div class="container">
     <header class="hero is-dark">
         <div class="hero-body">
-            <h1 class="title has-text-centered"> Add a new tour</h1>
+            <h2 class="title has-text-centered">Edit {{member.name}}</h2>
         </div>
     </header>
     
     <main class="section has-background-grey-light">
-        <form action="/" method="POST">
-            <input type="text" name="name" placeholder="Tour name">
+        <form action="/{{member._id}}?_method=PUT" method="POST">
+            <input name="name" type="text" placeholder="Name">
+            <input name="role" type="text" placeholder="Role">
+            </br>
+            </br>
             <input class="button is-dark is-small" type="submit" value="Submit">
         </form>
         </br>
