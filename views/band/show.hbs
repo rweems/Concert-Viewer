@@ -7,10 +7,13 @@
 
      <main class="section has-background-grey-light has-text-black has-text-weight-bold">
         <div>
+            <img src="{{band.image}}"/>
+            </br>
+            {{band.genre}}
                 {{#each members}}
                 <ul>
                     <li>
-                        {{name}} 
+                        name: {{name}} - role: {{role}}
                     </li>
                 </ul>
                 <a href="/{{_id}}/edit">Edit</a>
@@ -20,8 +23,13 @@
             </br>
             </br>
         <form action="?" method="POST">
-            <label for="name">Member Name</label>
-            <input type="text" name="name" placeholder="Member name">
+            <label for="name">Name</label>
+            <input type="text" name="name" placeholder="Name">
+            </br>
+            <label for="name">Role</label>
+            <input type="text" name="role" placeholder="Role">
+            </br>
+
             <input class="button is-dark is-small" type="submit" value="Submit">
         </form>
 

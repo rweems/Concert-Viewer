@@ -17,20 +17,16 @@ router.put('/:id', tourController.update);
 
 router.get('/:id/show',tourController.show);
 
-router.post('/:id/show', tourController.create);
-
-router.put('/:id', tourController.update);
-
 router.get('/:id/delete',tourController.delete);
 
 
 //band routes
 const bandController = require('../controllers/bands.js');
-router.get('/band/index',bandController.index);
+router.get('/band/:id',bandController.index);
 
 router.get('/band/:id/new',bandController.new);
 
-router.post('/band', bandController.create);
+router.post('/band/:id', bandController.create);
 
 router.get('/band/:id/edit', bandController.edit);
 

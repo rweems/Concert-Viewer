@@ -8,7 +8,7 @@ const bandController = {
     },
     create:(req,res) => {
         band.create(req.body)
-            .then(()=> res.redirect('band/index'))
+            .then(()=> res.render('band/index'))
     },
     new: (req,res) => {
         res.render('band/create');
