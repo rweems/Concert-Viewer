@@ -1,16 +1,17 @@
 <div class="container">
     <header class="hero is-dark">
         <div class="hero-body">
-            <h2 class="title has-text-centered">Edit {{band.name}} Band</h2>
+            <h2 class="title has-text-centered">Edit {{band.name}}</h2>
         </div>
     </header>
     
     <main class="section has-background-grey-light">
-        <form action="/{{band._id}}?_method=PUT" method="POST">
+        <form action="/band?_method=PUT" method="POST">
             <input name="name" type="text" placeholder="Band Name">
             <input type="submit" value="Submit">
         </form>
 
-        <a href="/">Home</a>
+        </br>
+        <a class="button is-dark" href="/">Home</a>
     </main>
 </div>

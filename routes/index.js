@@ -36,6 +36,7 @@ router.put('/band/:id/update', bandController.update);
 
 router.get('/band/:id/delete',bandController.delete);
 
+
 const memberController = require('../controllers/members.js');
 router.get('/member/:id',memberController.index);
 

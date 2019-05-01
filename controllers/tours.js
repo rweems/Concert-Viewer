@@ -1,5 +1,5 @@
 const tour = require('../models/tour.js');
-
+const band = require('../models/band.js')
 const tourController = {
     index: (req,res) => {
         tour.find().then(tours => {

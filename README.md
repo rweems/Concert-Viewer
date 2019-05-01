@@ -15,6 +15,9 @@ App: [Concert-Viewer](https://concert-viewer.herokuapp.com/)
 ![wireframe](IMG-0504.png)
 
 
+![ERD](ConertTour.png)
+
+
 ### Technology Used
 
 
