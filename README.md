@@ -1,5 +1,5 @@
 
-# Concert Viewer
+# Concert Viewer - Project 2 for General Assembly(Atlanta)
 
 
 Using the technology listed below, I created an app to keep track of concerts. This app allows you to view the concert, the bands playing at the concert as well as the members of each band with their respective roles. 
